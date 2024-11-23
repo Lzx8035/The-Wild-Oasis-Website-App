@@ -1,3 +1,5 @@
+import Counter from "../components/Counter";
+
 // First Time: Async React Fn
 export default async function Page() {
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
@@ -14,6 +16,8 @@ export default async function Page() {
           <li key={user.id}>{user.name}</li>
         ))}
       </ul>
+
+      <Counter users={data} />
     </div>
   );
 }
