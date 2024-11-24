@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Requirements:
 
-## Getting Started
+Users of the app are potential guests and actual guests
 
-First, run the development server:
+Guests should be able to learn all about the Wild Oasis Hotel
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Guests should be able to get information about each cabin and see booked dates
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Guests should be able to filter cabins by their maximum guest capacity
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Guests should be able to reserve a cabin for a certain date range
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Reservations are not paid online. Payments will be made at the property upon arrival. Therefore, new reservations should be set to "unconfirmed" (booked but not yet checked in)
 
-## Learn More
+Guests should be able to view all their past and future reservations
 
-To learn more about Next.js, take a look at the following resources:
+Guests should be able to update or delete a reservation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Guests need to sign up and log in before they can reserve a cabin and perform any operation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+On sign up, each guest should get a profile in the DB
 
-## Deploy on Vercel
+Guests should be able to set and update basic data about their profile to make check-in at the hotel faster
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# TECH:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Framework: NEXT.js
+
+The most popular React meta-framework. Handles routing, SSR, data fetching and even remote state management (in a way...), therefore replacing many tools we had to include before
+
+### Ul State management: Context API
+
+### DB / API : supabase
+
+### Styling: tailwindcss
