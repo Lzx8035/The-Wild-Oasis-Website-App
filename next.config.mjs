@@ -10,6 +10,7 @@ const nextConfig = {
       },
     ],
   },
+  // Static Site Generation
   // output: "export",
 };
 

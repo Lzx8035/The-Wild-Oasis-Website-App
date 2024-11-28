@@ -6,6 +6,10 @@ export const metadata = {
   title: "Cabins",
 };
 
+// !!! Route Level
+// export const dynamic = "force-dynamic"; // SAME
+export const revalidate = 3600; // Every hour
+
 export default async function Page() {
   return (
     <div>
