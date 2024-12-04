@@ -11,7 +11,9 @@ import { Suspense } from "react";
 // 👇
 // Convention
 export async function generateMetadata({ params }) {
-  const { name } = await getCabin(params.cabinId);
+  // FIXED with DOC
+  const { cabinId } = await params;
+  const { name } = await getCabin(cabinId);
   return { title: `Cabin ${name}` };
 }
 
@@ -38,7 +40,9 @@ export async function generateStaticParams() {
 // Any static content pages based on ID or slug
 
 export default async function Page({ params }) {
-  const cabin = await getCabin(params.cabinId);
+  // FIXED with DOC
+  const { cabinId } = await params;
+  const cabin = await getCabin(cabinId);
 
   return (
     <div className="max-w-6xl mx-auto mt-8">
