@@ -14,7 +14,8 @@ export const revalidate = 3600; // Every hour
 
 // Nextjs can get searchParams directly in page.js !!!
 export default async function Page({ searchParams }) {
-  const filter = searchParams?.capacity ?? "all";
+  const { capacity } = await searchParams;
+  const filter = capacity ?? "all";
 
   return (
     <div>
