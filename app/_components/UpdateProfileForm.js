@@ -1,6 +1,8 @@
 "use client";
 /* !!! We have server component in this client component right now by children */
+
 import { updateGuestAction } from "../_lib/actions";
+import SubmitButton from "./SubmitButton";
 
 function UpdateProfileForm({ guest, children }) {
   const { fullName, email, nationality, nationalID, countryFlag } = guest;
@@ -53,9 +55,7 @@ function UpdateProfileForm({ guest, children }) {
       </div>
 
       <div className="flex justify-end items-center gap-6">
-        <button className="bg-accent-500 px-8 py-4 text-primary-800 font-semibold hover:bg-accent-600 transition-all disabled:cursor-not-allowed disabled:bg-gray-500 disabled:text-gray-300">
-          Update profile
-        </button>
+        <SubmitButton pendingLabel="Updating...">Update profile</SubmitButton>
       </div>
     </form>
   );
