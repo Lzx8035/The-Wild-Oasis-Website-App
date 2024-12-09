@@ -33,3 +33,5 @@ The most popular React meta-framework. Handles routing, SSR, data fetching and e
 ### DB / API : supabase
 
 ### Styling: tailwindcss
+
+<!-- export NODE_OPTIONS="--no-deprecation" -->
