@@ -1,4 +1,4 @@
-🔗：https://lea-wild-oasis-project.vercel.app
+🔗：https://lea-wild-oasis-website-app.vercel.app/
 
 # Project Requirements:
 
