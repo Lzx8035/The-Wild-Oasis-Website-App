@@ -1,39 +1,37 @@
-🔗：https://lea-wild-oasis-website-app.vercel.app/
+# Wild Oasis Hotel Booking Website
 
-# Project Requirements:
+A modern hotel booking platform for guests to explore and reserve cabins.
 
-Users of the app are potential guests and actual guests
+[Live Demo](https://lea-wild-oasis-website-app.vercel.app/)
 
-Guests should be able to learn all about the Wild Oasis Hotel
+## Features
 
-Guests should be able to get information about each cabin and see booked dates
+🏨 Cabin Booking
 
-Guests should be able to filter cabins by their maximum guest capacity
+- Detailed cabin information display
+- Real-time availability checking
+- Dynamic date-based booking
+- Capacity-based cabin filtering
 
-Guests should be able to reserve a cabin for a certain date range
+👤 User Features
 
-Reservations are not paid online. Payments will be made at the property upon arrival. Therefore, new reservations should be set to "unconfirmed" (booked but not yet checked in)
+- User registration and authentication
+- Booking history tracking
+- Profile management
+- Reservation updates and cancellations
 
-Guests should be able to view all their past and future reservations
+## Tech Stack
 
-Guests should be able to update or delete a reservation
+- Next.js
+- Tailwind CSS
+- Supabase
+- Context API
 
-Guests need to sign up and log in before they can reserve a cabin and perform any operation
+## Project Status
 
-On sign up, each guest should get a profile in the DB
+Currently in active development with planned features:
 
-Guests should be able to set and update basic data about their profile to make check-in at the hotel faster
-
-# TECH:
-
-### Framework: NEXT.js
-
-The most popular React meta-framework. Handles routing, SSR, data fetching and even remote state management (in a way...), therefore replacing many tools we had to include before
-
-### Ul State management: Context API
-
-### DB / API : supabase
-
-### Styling: tailwindcss
-
-<!-- export NODE_OPTIONS="--no-deprecation" -->
+- Enhanced search functionality
+- Email notifications
+- Mobile optimization
+- Booking confirmation system
